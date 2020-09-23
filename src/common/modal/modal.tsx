@@ -91,6 +91,7 @@ const ModalView: React.FC<Props> = ({ open, onAdd, onClose }: Props) => {
       render: () => (
         <Tab.Pane>
           <Dropdown
+          id="dp-language-list"
             button
             defaultValue={language || ""}
             className="icon"
@@ -150,6 +151,7 @@ const ModalView: React.FC<Props> = ({ open, onAdd, onClose }: Props) => {
         <Modal.Actions>
           {activeTab === TABS.language ? (
             <Button
+            id="btn-modal-next"
               icon
               labelPosition="right"
               onClick={() => {
@@ -174,7 +176,7 @@ const ModalView: React.FC<Props> = ({ open, onAdd, onClose }: Props) => {
               <Button color="red" onClick={() => handleClose()}>
                 <Icon name="remove" /> Close
               </Button>
-              <Button color="green" onClick={() => handleInputs()}>
+              <Button id="btn-modal-add" color="green" onClick={() => handleInputs()}>
                 <Icon name="checkmark" /> Add
               </Button>
             </>

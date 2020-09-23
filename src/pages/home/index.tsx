@@ -48,7 +48,7 @@ const HomeLayout: React.FC<any> = () => {
         <Statistic.Label>Widgets</Statistic.Label>
       </Statistic>
       <br />
-      <Button color="green" onClick={() => onOpenModal()}>
+      <Button id='btn-add-widget' color="green" onClick={() => onOpenModal()}>
         Add Widget
       </Button>
       <br />
